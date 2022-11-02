@@ -17,6 +17,8 @@ const App = () => {
           <span>Search</span>
           <SearchOutlined style={{ fontSize: "30px" }} />
         </div>
+        <div className="homePage">Home</div> {/*To be verified*/}
+        <div className="albumPage">Your Albums</div> {/*To be verified*/}
       </Sider>
       <Content>
         <Routes>
