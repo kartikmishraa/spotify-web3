@@ -109,7 +109,7 @@
 }
 
 .contentWindow {
-  padding: 50px 0px;
+  padding: 25px 0px; /* 50px 0px */
 }
 
 .footer {

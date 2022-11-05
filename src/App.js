@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Album from "./pages/Album";
 import "./App.css";
@@ -17,10 +17,22 @@ const App = () => {
           <span>Search</span>
           <SearchOutlined style={{ fontSize: "30px" }} />
         </div>
-        <div className="homePage">Home</div> {/*To be verified*/}
-        <div className="albumPage">Your Albums</div> {/*To be verified*/}
+        <Link to="/" style={{ color: "#1DB954" }}>
+          <p>Home</p>
+        </Link>
+        {/* <Link to="/album" style={{ color: "#1DB954" }}>
+          <p>Albums</p>
+        </Link> */}
+        <p>Your Music</p>
+        <div className="recentPlayed">
+          <p className="recentTitle"> RECENTLY PLAYED</p>
+          <div className="install">
+            <span>Install App</span>
+            <DownCircleOutlined style={{ fontSize: "30px" }} />
+          </div>
+        </div>
       </Sider>
-      <Content>
+      <Content className="contentWindow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/album" element={<Album />} />
